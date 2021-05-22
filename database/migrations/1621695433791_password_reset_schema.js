@@ -13,7 +13,7 @@ class PasswordResetSchema extends Schema {
       table.dateTime('expires_at')
       table.timestamps()
 
-      table.foreing('email').references('email').inTable('users').onDelete('cascade')
+      table.foreign('email').references('email').inTable('users').onDelete('cascade')
     })
   }
 
